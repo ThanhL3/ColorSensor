@@ -1,0 +1,1 @@
+Make sure the I2C is interrupt driven.
