@@ -8,12 +8,12 @@ This is an embedded C project that utilizes the TCS I2C Color Sensor on a PIC32 
 
 Below are the configuration 
 
-Microcontroller Board: PIC32MX795F512L
+Microcontroller Board: PIC32MX764F128H
 
 IDE: MPLABX 
 
-Library: FreeRTOS + Harmony 
+Library: FreeRTOS
 
 Wireless Peripheral: RN-171
 
-Color Sensor: TCS34725, RGB Color Sensor with IR filter and White LED 
+Color Sensor: Adruino RGB Color Sensor with IR filter and White LED 
