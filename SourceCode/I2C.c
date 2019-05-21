@@ -45,13 +45,13 @@ NetworkData getValue(NetworkData *data)
 {
     static STATE currState = WRITE; 
     char s[50];
-	static int count = 0;
-	static uint8_t red;
-	static uint8_t green;
-	static uint8_t blue;
-	for (int x = 0; x < 8; x++)
-	{
-		//writing to Enable Register
+    static int count = 0;
+    static uint8_t red;
+    static uint8_t green;
+    static uint8_t blue;
+    for (int x = 0; x < 8; x++)
+    {
+	//writing to Enable Register
         writeHandle = DRV_I2C_Transmit(I2CHandler, enableAddress, &enableCmd, sizeof(enableCmd), NULL);
             
         currState = READ;
@@ -100,5 +100,5 @@ NetworkData getValue(NetworkData *data)
             data->green = green;
             data->blue = blue;
         }
-	}
+   }
 }
