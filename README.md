@@ -1,4 +1,4 @@
-**COLOR SENSOR DRIVER**
+**COLOR SENSOR COMMUNICATION**
 
 ![alt text](https://grobotronics.com/images/detailed/8/Adafruit-1334-30091138-01.jpg)
 
@@ -17,3 +17,9 @@ Library: FreeRTOS
 Wireless Peripheral: RN-171
 
 Color Sensor: Adruino RGB Color Sensor with IR filter and White LED 
+
+Instructions: 
+
+Three thread are running concurrently, BLINK, ColorThread, and WiFlyThread. 
+
+Import these three threads into a project including all of the header files. The WiFly thread will continually sending 1 byte at a time to a specific IP address and port. Have a server set up at that IP address and Port and it should be able to receive the data coming in.
