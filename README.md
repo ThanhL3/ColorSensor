@@ -4,7 +4,7 @@
 
 Pic Source: Adafruit
 
-This is an embedded C project that utilizes the TCS I2C Color Sensor on a PIC32 microcontroller. The project uses multithreading to allow one thread to read color data from the sensor and send that data to another thread. The other thread utilizes UART communication to operate a WiFly peripheral to send color data to a seperate server.   
+This is an embedded C project that utilizes the TCS I2C Color Sensor on a PIC32 microcontroller. The project uses multithreading to allow one thread to read color data from the sensor and send that data to another thread using queue communication. The other thread utilizes UART communication to operate a WiFly peripheral to send color data to a seperate server.   
 
 Below are the configuration 
 
